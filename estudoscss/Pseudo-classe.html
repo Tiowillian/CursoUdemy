@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+=====================Pseudo-Classe============================
+
+:hover-> quando o mouse passa  
+
+:link-> esse seria os links nao visitados(uma configuraçaos para links que eu nao visitei depois de acessar o link volta ao normal) (normalmento colocado jnt na classe inicial do link)
+
+:visited-> esse seria para os links que ja foram visitados 
+
+:active-> seria a formataçáo de quando voce ativa/clica no link
+
+======================Pseudo-Elemento========================
+
+::fist-line-> serve para estilizar uma parte especifica do elemento (esse serve para configurar a primeira linha do paragrafu)
+
+-->
+
+<style>
+    a{
+        text-decoration: none;
+        color:purple;
+        padding: 10px;
+    }
+
+    a:hover{
+        background-color: purple;
+        color:white
+
+    }
+    /*===================LINKS===========================================
+    a {
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    a:hover {
+        background-color: black;
+        color: white;
+        font-size: 1.10em;
+        border-radius: 10px;
+
+    }
+
+    a:link {
+
+        color: gray;
+        border-radius: 15px;
+
+    }
+
+    a:active {
+        background-color: darkgray;
+        color: white;
+    }
+        */
+
+    /*=============================FIM LINKS==========================*/
+    /*========================FORMULARIOS=============================*/
+    /*
+:checked-> seria a formatação de qundo eu marco a opção
+
+:focus-> uma formatação para o foco (exemplo na caixa de texto aplicando um backgroud no focus quando voce clica para digitar o fundo muda de cor, com o color pode escolhe o car do texto do que o usuario digitou)
+
+:required-> e uma formatação para aqueles input que forem obrigatorios a responder (os que tiverem required como o exemplo do input text abaixo
+)
+*/
+
+    input:checked {
+        margin-left: 20px;
+    }
+
+    input:focus {
+        background-color: darkgray;
+    }
+
+    input:required {
+
+        border: 1px solid darkred;
+
+    }
+
+    /*================================FIM FORMULARIOS============================*/
+    /*================================PSEUDO-ELEMENTOS===========================*/
+    /*
+    ::fist-line-> serve para estilizar uma parte especifica do elemento (esse serve para configurar a primeira linha do paragrafu)
+
+    ::first-lette-> primeira letra
+
+    ::selection-> muda o marcador 
+    
+    ::before->adiciona um conteudo antes
+
+    ::after-> adiciona um conteudo depois
+
+    */
+    P::first-line {
+        color:blue;
+    }
+
+    p::first-letter{
+        font-size: 50px;
+        color:red;
+    }
+
+    p::selection{
+        background-color: gray;
+    }
+</style>
+
+<body>
+    <div>
+        conteudo da div
+        <h2>Conteudo h2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur officiis, quas doloremque, neque earum cum
+            cumque deserunt iusto perspiciatis a sapiente iste. Quasi ab in omnis consequuntur sed quisquam ex.
+            Iusto minus officia mollitia ducimus. At eaque consequuntur non quam maiores ullam eligendi fugit aut ab
+            possimus. Eaque harum odio, numquam debitis fuga, eius suscipit fugiat quaerat animi ratione optio.</p>
+        <a href="https://www.google.com/?hl=pt_BR&zx=1774752710659&no_sw_cr=1">Google</a>
+        <a href="https://www.google.com/?hl=pt_=1774752710659&no_sw_cr=1">Instagram</a>
+        <a href="https://www.google.com/?hl=pt_BR&zx=1772710659&no_sw_cr=1">GitHub</a>
+    </div>
+    <div>
+        <h1>Formulario</h1>
+        <input type="checkbox" name="aceito" value="aceito">aceito <br>
+        <input type="radio" name="opcao" value="sim">Sim <br>
+        <input type="radio" name="opcao" value="nao">Não <br>
+        <input type="text" required placeholder="Digite seu nome">
+    </div>
+<h1>exercicios</h1>
+<hr>
+<hr>
+<a href="">Home</a>|
+<a href="">Sobre</a>|
+<a href="">Empresa</a>|
+<a href="">Produtos</a>|
+<a href="">Contato</a>
+</body>
+
+</html>

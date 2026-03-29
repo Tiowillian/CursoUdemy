@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--
+div>h1{} -> seleciona o filho direto da div    (seletor filho)
+
+div h1{} -> seleciona um elemento que e descendente de outro elemento especificado, e nao apenas o filho direto desse elemento (seletor descendente)
+
+h1+p{} -> seleciona o primeiro elemento p depois de qualquer elemento h1  (Irmao adjacente)
+
+h1~p{} -> seleciona elemento(s) <p> que sejam irmaos de <h1>, se houver dois elementos <p> sera selecionado os dois  (irmao geral)
+-->
+
+<style>
+    h1 {
+        color: green
+    }
+
+    h1+p {
+        border-top: solid gray 3px;
+        padding-top: 10px;
+    }
+
+    p a {
+        background-color: purple;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 5px;
+
+    }
+    
+    .destaque{
+        color:yellow;
+    }
+
+    /*
+    li>a {
+        text-decoration: none;
+        color: black;
+    }
+
+    div p {
+
+        color: red;
+    }
+
+    h1+p {
+        color: purple;
+    }
+
+    h1~p {
+        border: 1px solid black;
+    }
+    */
+</style>
+
+<body>
+    <!--  <div>
+        <h1>Teste</h1>
+        <p>isso e um teste</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis quibusdam unde perferendis
+            voluptas placeat adipisci consequuntur officia, debitis neque ex saepe eligendi recusandae magnam modi illo,
+            ducimus, aliquid distinctio.</p>
+    </div>
+    <div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="">Produtos</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1>teste 2</h1>
+        <p>1 Atividade</p>
+        <p>2 Atividade</p>
+        <p>3 Atividade</p>
+    </div>
+    -->
+    <h1>Titulo da pagina</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga recusandae exercitationem amet voluptate!
+        Aspernatur veniam maxime possimus sed ullam iure repudiandae quidem quibusdam tempora quis, voluptatem
+        obcaecati, dicta animi pariatur? <br>
+        <a href="">Leia Mais</a>-
+        <a href="">Gostei (10)</a>
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deleniti totam aliquam, modi nostrum odio.
+        Voluptatibus deserunt harum ad veritatis eaque facilis, asperiores enim fugiat nulla totam, recusandae commodi
+        amet!</p>
+    <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore odio enim ratione pariatur? Rem
+        asperiores, voluptatum iure voluptatibus veritatis similique nostrum, deserunt, corporis nesciunt alias
+        corrupti. Consectetur, ipsam. Necessitatibus!</p>
+</body>
+
+</html>
